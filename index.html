@@ -21,14 +21,26 @@
   </header>
   
   <nav class="bg-secondary nav-sticky">
-      <ul class="text-uppercase">
-        <li><a href="#about-section">A propos</a></li>
-        <li><a href="#skills-section">Compétences</a></li>
-        <li><a href="#studies-section">Parcours</a></li>
-        <li><a href="#realisation-section">Réalisations</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul> 
+    <span class="nav-icon"><i class="fas fa-bars color-white"></i></span>
+    <ul class="text-uppercase">
+      <li><a href="#about-section">A propos</a></li>
+      <li><a href="#skills-section">Compétences</a></li>
+      <li><a href="#studies-section">Parcours</a></li>
+      <li><a href="#realisation-section">Réalisations</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul> 
   </nav>
+
+  <!--Navbar-collapsed on clik-->
+  <div class="navbar-collapsed bg-secondary">
+    <ul class="text-uppercase">
+      <li><a href="#about-section">A propos</a></li>
+      <li><a href="#skills-section">Compétences</a></li>
+      <li><a href="#studies-section">Parcours</a></li>
+      <li><a href="#realisation-section">Réalisations</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul> 
+  </div>
 
   <main>
 
@@ -46,7 +58,7 @@
       </div>
       <hr>
     </section>
-     
+
     <section>
       <div class="container-two">
         <div class="section-title">
@@ -149,27 +161,27 @@
             </div>
           </div>  
         </article>
-        <div class="symbols-other" id="studies-section">
+        <div class="symbols-other">
           <img src="/images/symbol-other.png" alt="image ecran d'ordinateur">
         </div>
       </div>
-      <hr>
+      <hr id="studies-section">
     </section>
     
     <section>
       <div class="container-four">
         <article class="parcours">
-         <div>
-           <h2 class="text-uppercase">Parcours</h2>
-         </div>
-         <table class="table-diplomes">
-           <thead>
-             <tr>
-               <th>Années</th>
-               <th>Diplômes / Expériences</th>
-             </tr>
-           </thead>
-           <tbody>
+        <div>
+          <h2 class="text-uppercase">Parcours</h2>
+        </div>
+        <table class="table-diplomes">
+          <thead>
+            <tr>
+              <th>Années</th>
+              <th>Diplômes / Expériences</th>
+            </tr>
+          </thead>
+          <tbody>
               <tr>
                 <td>2020</td>
                 <td>En cours de formation Développeuse web Full-Stack - Studi</td>
@@ -283,6 +295,8 @@
   <footer>
     <i class="far fa-copyright"> Lucie Bernard-Légat</i>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

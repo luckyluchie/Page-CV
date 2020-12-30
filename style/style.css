@@ -310,6 +310,41 @@ nav a:hover {
   top: 0px;
 }
 
+.nav-icon {
+  float: right;
+  margin-right: 1rem;
+  padding: 0.6rem 0;
+  display: none;
+}
+
+.nav-icon i {
+  font-size: 1.5rem;
+}
+
+.navbar-collapsed {
+  display: none;
+  margin-top: 250px;
+}
+
+.navbar-collapsed ul {
+  padding: 10px;
+}
+
+.navbar-collapsed li {
+  padding: 8px;
+}
+
+.navbar-collapsed a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-collapsed a:hover {
+  color: #d9dddd;
+}
+
 .container-one {
   display: -ms-grid;
   display: grid;
@@ -629,6 +664,9 @@ footer i {
 }
 
 @media screen and (max-width: 938px) {
+  main {
+    margin-top: 250px;
+  }
   section {
     display: -ms-grid;
     display: grid;
@@ -638,12 +676,17 @@ footer i {
     text-align: center;
     font-size: 14px;
   }
-  nav {
-    height: 50px;
-    font-size: 0.9rem;
-  }
   .nav-sticky {
     position: static;
+  }
+  nav {
+    margin-top: -300px;
+  }
+  nav li {
+    display: none;
+  }
+  nav .nav-icon {
+    display: inline;
   }
   .container-two {
     -ms-grid-columns: (1fr)[12];
@@ -765,6 +808,9 @@ footer i {
         grid-column-start: 1;
     grid-column-end: 13;
     font-size: 1rem;
+  }
+  nav {
+    margin-top: -250px;
   }
 }
 
