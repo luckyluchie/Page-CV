@@ -108,7 +108,6 @@ body {
   height: 100%;
   margin: 0px;
   font-size: 16px;
-  font-family: 'Robot', sans-serif;
   color: #585f5f;
 }
 
@@ -177,72 +176,36 @@ header {
   text-align: center;
 }
 
-// NAV
-nav {
-  height: 50px;
+
+// // NAV
+.navbar {
+  overflow: hidden;
+  background-color: $secondary;
   text-align: center;
-  margin-bottom: 2rem;
-
-  ul {
-  padding: 10px;
-  }
-
-    li {
-    display: inline;
-    padding: 15px;  
-    }
-
-    a {
-    color: $white;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    &:hover {
-      color: #d9dddd;
-    }
-    }
-  }
-
-.nav-sticky {
-  z-index: 1000;
   position: sticky;
-  top: 0px;
+  top: 0;
+  z-index: 1;
 }
 
-.nav-icon {
-  float: right;
-  margin-right: 1rem;
-  padding: 0.6rem 0;
-  display: none; // invisible on desktop
-
-  i {
-    font-size: 1.5rem;
-  }
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
 }
 
-.navbar-collapsed {
-  display: none; // disable on desktop
-  margin-top: 250px;
-  
-  ul {
-    padding: 10px;
-    }
-  
-      li {
-      padding: 8px;  
-      }
-  
-      a {
-      color: $white;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-  
-      &:hover {
-        color: #d9dddd;
-      }
-      }
+.navbar a:hover {
+  color:#e0e2e2;
+}
+
+.navbar .icon {
+  display: none;
+  font-size: 1.2rem;
+  padding: 8px 10px;
 }
 
 // ABOUT
@@ -519,7 +482,7 @@ footer {
 // Media Screen Big Tablet
 @media screen and (max-width: 938px) {
   main {
-    margin-top: 250px;
+    margin-top: 30px;
   }
 
   section {
@@ -530,20 +493,34 @@ footer {
     font-size: 14px;
   }
 
-  .nav-sticky {
+  .navbar {
     position: static;
   }
+  .navbar a {
+    display: none;
+  }
 
-  nav {
-    margin-top: -300px;
+  .navbar a.icon {
+    float: right;
+    display: block;
+    position: relative;
+  }
 
-    li {
-      display: none;
-    }
+  .navbar.responsive {
+    position: relative;
+  }
 
-    .nav-icon {
-      display: inline;
-    }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 5px 10px;
   }
 
   .container-two {
@@ -659,11 +636,19 @@ footer {
     grid-column-end: 13;
     font-size: 1rem;
   }
-
-  nav {
-    margin-top: -250px;
-  }
 }
+
+
+
+@media screen and (max-width: 938px) {
+  
+}
+
+@media screen and (max-width: 938px) {
+  
+}
+
+
 
 // Media screen Mobile
 @media screen and (max-width: 414px) {
@@ -683,7 +668,7 @@ footer {
   }
 }
 
-css for scroll-reveal
-html.sr {
-  visibility: hidden;
-}
+// //css for scroll-reveal
+// html.sr {
+//   visibility: hidden;
+// }
