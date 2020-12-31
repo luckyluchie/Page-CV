@@ -828,4 +828,8 @@ footer i {
     font-size: 8px;
   }
 }
+
+css for scroll-reveal html.sr {
+  visibility: hidden;
+}
 /*# sourceMappingURL=style.css.map */

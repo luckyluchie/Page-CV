@@ -665,7 +665,6 @@ footer {
   }
 }
 
-
 // Media screen Mobile
 @media screen and (max-width: 414px) {
   article, .small, .competence-text {
@@ -682,4 +681,9 @@ footer {
   .small {
     font-size: 8px;
   }
+}
+
+css for scroll-reveal
+html.sr {
+  visibility: hidden;
 }
