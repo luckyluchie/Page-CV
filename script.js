@@ -17,7 +17,7 @@ let slideInRight = {
 
 let slideInLeft = {
   distance: '100%',
-  origin: 'left',
+  origin: 'left'
 }
 
 ScrollReveal().reveal('.symbols-front', slideInRight)
